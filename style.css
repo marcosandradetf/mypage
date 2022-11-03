@@ -1,4 +1,280 @@
-html, body {
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body {
+  overflow-x: hidden; 
+}
+body, ul { /* seleciona o body e a ul */
+    margin: 0px; /* retira a margem do elemento selecionado */
+    padding: 0px; /* remove o padding */
+       
+    
+}
+
+.holyholy {
+    position: relative;
+    width: 60vw;
+    left: 20%;
+    
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+a { /* seleciona as ancoras (links) */
+    color: black; /* altera a cor do elemento  */
+    text-decoration: none; /* remove o sublinhado */
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a:hover { /* ao passar mouse sobre ancora */
+    background: rgba(0, 0, 0, .02);
+}
+
+#logo {
+    box-sizing: border-box;
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    padding: 0.1%;
+    position: relative;
+    width: 100%;
+    left: 0px;
+}
+
+#logo_a {
+    padding: 0.1%;
+    position: relative;
+    left:0px
+    
+}
+
+
+#logomenu {
+    display: none;
+    
+   
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex; 
+    align-items: center;
+    /*justify-content: space-between; separa a logo do menu */
+    background: #F8F8FF;
+}
+
+
+
+#footer {
+    box-sizing: border-box;
+    background: #F8F8FF;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* #nav_foot {
+    box-sizing: border-box;
+    height: 280px;
+    background: #F8F8FF;
+}*/
+
+#menu_foot {
+    list-style: none;
+    position: relative;
+    left: 150px;
+    bottom: -45px;
+}
+
+#menu_foot2 {
+    list-style: none;
+    position: relative;
+    left: 250px;
+    bottom: 28px;
+} 
+
+#menu_foot3{
+    list-style: none;
+    position: relative;
+    left: 250px;
+    bottom: 155px;
+}
+
+.separator div {
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    height: 1px;
+    background: gray;
+    top: -135px;
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    position: absolute;
+    width: 100%;
+    left: 100px;
+    top: 20px;
+}
+
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+#btn-two{
+    display: none;
+    
+}
+
+
+@media (max-width: 600px) { /* tudo que estiver abaixo de 600px aplique os estilos abaixo */
+  footer {
+        overflow-x: hidden;
+    }
+    
+    #menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50vw;
+    height: 100vh;
+    background: #f0f5ff;
+    flex-direction: column;
+    align-items: left;
+    transition: .4s;
+    z-index: 1000;
+    visibility: hidden;
+    /* transform: translateX(0%);  jogar elemento para fora do site */
+    
+    
+    }
+    #nav.active #menu{
+        height: calc(100vh -70px);
+        display: block;
+        visibility: visible;
+        
+        
+    }
+
+    /*#nav.active #logo {
+        visibility: hidden;
+    }*/
+    
+    #logo {
+        position: relative;
+    }
+
+    #logo_a {
+        position: relative;
+        left:20px
+    }
+
+    #logomenu{
+        display: block;
+        box-sizing: border-box;
+        max-width: 65px;
+        max-height: 65px;
+        width: auto;
+        height: auto;
+        padding: 0.1%;
+        position: absolute;
+        left: 5px;
+        top: -5px;
+    }
+
+    #nav.active #logomenu {
+        visibility: visible;
+        position: absolute;
+        width: 100%;
+    }
+    
+    #menu a {
+        padding: .5rem 0;
+        margin: 0 .5rem;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #btn-two {
+        display: block;
+        position:relative;
+        top: -30px;
+        left: 80%;
+        font-family: 'Open Sans', sans-serif;
+        padding: .5rem;
+        cursor: pointer;
+        font-size: 1.7rem;
+        border: none;
+        background: none;
+        color: black;
+        
+        
+       
+    }
+
+    #burger {
+        border-top: 2px solid;
+        position: absolute;
+        width: 20px;
+        top: 25px;
+    }
+
+    #burger::after, #burger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+    }
+
+
+    /*#nav.active #burger {
+
+    }*/
+
+    #menu_foot {
+        position:relative ;
+        bottom: -45px;
+        left: 10px;
+    }
+
+    #menu_foot2 {
+        position:relative ;
+        bottom: 28px;
+        left: 100px;
+    } 
+
+    .holyholy {
+        position: relative;
+        width: 94vw;
+        left: 3%;
+    
+        
+    }
+    
 }

@@ -1,58 +1,120 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Página de aluno: Marcos Túlio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página web</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h2>Marcos Andrade, aluno de Engenharia de Computação</h2>
-    <nav>
-      <ul>
-        <li><a href="#">exemplo</a></li>
-        <li><a href="#">exemplo</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header id="header">
+        <nav id="nav">
+            
+                <button id="btn-mobile" alt="botão">
+                    <span id="burger" alt="botão"></span>
+                </button>
+           <!--<button id="btn-two">fechar
+                <span id="burger2"></span>
+            </button>-->
+                
+                
+                    <ul id="menu">
+                    <li><a href="/"><img id="logomenu" src="logo.png" alt="imagem logo clicavel"></a><br></li>
+                    <li><button id="btn-two">x</button></li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><a href="https://github.com/marcosandradetf/myprojects.git" target="_blank" rel="noopener noreferrer" alt="link meu github">Portifólio</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5531989876398" target="_blank" rel="noopener noreferrer" alt="link meu whatsapp">Contato</a></li>
+                    <li><a href="mailto:marcos.tandrade@al.infnet.edu.br" target="_blank" rel="noopener noreferrer" alt="link meu email">E-mail</a></li>
+                </ul>
+            
+        </nav>
+        <a id="logo_a" href="/"><img id="logo" src="logo.png" alt="imagem logo clicavel"></a>
+    </header>
+    <main id="main">
+        <nav id="nav2">
+            <div class="holyholy">
+                <h1 id="title"> Que site é esse ? </h1>
+                <p>Trata-se de um trabalho da faculdade de Engenharia de computação turma do primeiro período de 2022. Aqui irei abordar alguns temas sobre mim e por fim descrever como foi 
+                    desenvolvido este site. </p>
+                <article>
+                    <h2 class="title2">Quem Sou eu:</h2>
+                    <h3 class="title2">Nessa primeira abordagem irei me apresentar e falar um pouco sobre mim.</h3>
+                    <p>Meu nome é Marcos Túlio, tenho 26 anos, moro em Ibirité - região metropolitana de Belo Horizonte. Estudo Engenharia de computação no Instituto Infnet. </p>
+                    <h4 class="title2">Por que eu escolhi este curso ?</h4>
+                    <p>Bom, sempre fui fã de tecnologia e me considero privilegiado por ter nascido já em uma época moderna e ter vivenciado a <strong>modernização</strong>. Com 5 anos eu ganhei um Super Nintendo,
+                        joguei clássicos como Super Mario World e Donkey Kong. Pouco tempo depois minha mãe comprou nosso primeiro computador, com <em>incríveis</em> 256mb de memória ram e
+                        um cpu Intel Celeron da época a qual eu não me lembro qual era especificamente o modelo. Fiz muito com essa máquina, joguei em emuladores como Project64, ePSXe, Emurayden,
+                        Mame e etc. O tempo foi passando e este computador se tornou absoleto e teve que <em>descansar</em>. No colégio vivi a época do Orkut, MSN, jogos online como Counter 
+                        Strike 1.6, e participei de foruns como Yahoo respostas, foi uma boa época. O tempo foi passando e durante a época da alta de jogos online eu descobri minha paixão por hardware, montei meu primeiro computador do zero em 2019 ,
+                        Core2Duo, 4g bddr3 e uma Nvidia Gt210, vi que não servia para o que queria na época que era jogar, e decidi pesquisar sobre o chipset dessa máquina o então G41, descobri que o mesmo
+                        não suportava bons upgrades e consegui migrar para um i7 2700k com 8gb de memória ram ddr3 1600mhz e um chipset z77 de uma Mainborad Asus RogStrix. Foi um bom upgrade mas ainda continuei limitado pois tinha uma gpu
+                        extremamente antiga a clássica Nvidia Gtx 580, então vi que precisava de um <strong>upgrade</strong>.</p> 
+                    <h4 class="title2">Saga montando PC Gamer</h4>
+                    <p>Meu primeiro PC Gamer foi um AMD Ryzen 5 1600, gpu RX 570 também da AMD e 16gb de ram DDR4. </p> 
+                    <p>Segundo PC gamer montado por mim foi um i5 8400, gtx 970 8gb ddr4 e uma Mainboard Asus RogStrix z370</p>
+                    <p><img src="rog.png" alt="PC Gamer 1" width="100%" height="100%"></p>
+                    <p>Neste meu terceiro PC gamer teve três transições de GPU, comecei na AMD RX 480, depois GTX 1660 Super e por ultimo AMD RX 5600xt. Três transições de CPU Ryzen 5 1600, Ryzen 5 3500x
+                        e por fim Ryzen 5 3600. A base foi Sempre a mesma, uma Mainboard Asrock b450m Steen Legend e 16gb ram ddr4 Corsair. </p>
+                        <p><img src="rx480.jpg" width="100%" height="100%" alt="PC Gamer 2"><figcaption>Primeira transiçao: RX 480</figcaption></p>
+                  <p><img src="1660s.jpg" width="100%" height="100%" alt="PC Gamer 2"><figcaption>Segunda transiçao: GTX 1660 Super</figcaption></p>
+                    <img src="5600xt.jpg" width="100%" height="100%" alt="PC Gamer 2"><figcaption>Terceira transiçao: RX 5600XT! Este era meu único PC e precisou ser vendido em 2020 na época da pandemia e decretou uma época a qual fiquei 1 ano sem um PC de qualidade.</figcaption>
+                    
+                    <h4 class="title2">A volta <strong><em>triunfal</em></strong></h4>
+                    <p>Em 2021 eu voltei a montar PC Gamer através de importações pelo site Aliexpress. No começo do ano eu comprei um CPU Intel i5 10500es, tratava-se de uma amostra de engenharia que eu 
+                        permaneci por alguns meses antes de montar meu computador atual, mas ainda falarei sobre isso. Ainda falando deste Intel , ele foi utilizado com memorias chinesas Tanbash do Aliexpress
+                        e uma Placa-mãe que também foi importada, de boa qualidade com chipset h410. O problema foi quando eu decidi comprar uma gpu usada em plena alta da mineração, com os preços nas alturas eu comprei
+                        novamente uma GTX 970 lembra dela ? Tive um modelo parecido no meu segundo PC Gamer, claro que não era um modelo da Strix da Asus né ? Talvez seja por isso que meu uma intensa dor de cabeça,
+                        A Gpu simplesmente estava morrendo, artefatos na tela, desligando sozinha, o que eu fiz ? Tive uma ideia de reduzir o clock da Gpu e da memoria da gpu. E assim, ao ver que os problemas foram
+                        resolvidos, modifiquei a BIOS dessa Placa de vídeo para que ela sempre operasse nesta frequência. </p>
+                        <p><img src="h410.jpg" alt="PC Gamer 4" width="100%" height="100%"></p>
+                    <h4 class="title2">Meu Atual PC Gamer</h4>
+                    <p>Placa-mãe Msi b450 Mortar max<br>
+                    CPU Ryzen 5 5600<br>
+                    Memoria: 16gb ddr4<br>
+                    Placa de vídeo: Nvidia RTX 3060 12gb<br>
+                    Dispensa comentários, é meu atual PC Gamer com o qual nunca tive problema nenhum.</p>
+                        <p><p><img src="rtx.jpg" width="100%" height="100%" alt="PC Gamer 4"></p></p>
+                    <h4 class="title3">Quando iniciei este curso e o que eu estou aprendendo na faculdade:</h4>
+                    <p>Iniciei este curso no dia 10 de Outubro de 2022 e nunca tinha tido contato com programação de fato, como devem ter percebido minha paixão sempre foi hardware, mas confesso,
+                        estou gostando muito e tendo muita facilidade para aprender, talvez seja pelo fato de eu sempre ter tido bastante contato com tecnologia. Estou aprendendo sobre criação de sites
+                        utilizando HTML, CSS e Javascrip. Comecei aprendendo sobre a introdução, tag semanticas, boa formatação, scripts simples e estilização através do CSS.</p>
+                    <h4 class="title3">Como eu desenvolvi este site ?</h4>
+                    <p>Este site ficou bem interessante para quem ainda não completou nem um mês na faculdade não é mesmo ? Pois é, obviamente eu não aprendi isso diretamente nas aulas, mas recebi uma base
+                        dos professores, li os livros recomendados e pesquisei alguns temas no youtube, como por exemplo menu mobile. Se voce estiver lendo este artigo pelo computador experimente reduzir a janela para qualquer valor abaixo de 
+                        600px e verá a mágica acontecer. Fiz isso utilizando o @media em CSS. Aprendi também como dar funcionalidade ao menu com Javascrip e modifiquei o código para criar dois botões um exclusivo para 
+                        fechar e um para abrir, apenas questão de gosto e dar identidade ao meu projeto.
+                    </p>
 
-  <main>
-    <section>
-      <article>
-        <h3>Título do artigo</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam nisi repudiandae quas saepe totam omnis similique voluptatum sunt sapiente ad tenetur at necessitatibus deleniti velit eum, odit, inventore aliquam quisquam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente cumque nisi! Aliquam culpa, quasi dolore perferendis nulla, perspiciatis temporibus natus, cumque autem atque illum nemo! Iure doloribus deserunt debitis!</p>
-      </article>
-    </section>
-  </main>
-
-  <aside>
-    <h4>Conteudo relacionado</h4>
-    <ul>
-      <li>Pagina oficial da <a href="#">Home Host</a></li>
-      <li>Item da lista</li>
-      <li>Item da lista</li>
-    </ul>
-  </aside>
-  
-  <footer>
-    <div>
-      <p>Inscreva-se para receber notícias</p>
-      <form method="post">
-        <input type="text" name="nome" placeholder="Digite seu nome">
-        <input type="email" name="email" placeholder="Digite seu email">
-        <input type="submit" name="enviar" value="Enviar"></form>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-
- <!--
-This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
--->
-<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+                    
+                </article>
+            </div>
+        </nav>        
+    </main>
+    <footer id="footer">
+        <nav id="nav_foot">
+            <div>
+            <ul id="menu_foot">
+                <li><strong>Minhas Redes</strong></li>
+                <li><br></li>
+                <li><br></li>
+                <li><a href="/"><img src="logo.png" width="80px"
+                    height="80px" alt="imagem logo clicavel"></a></li>
+                <li><br></li>
+            </ul>
+            <ul id="menu_foot2">
+                <li><strong>Marcos Túlio Felipe de Andrade, 2022</strong></li>
+            </ul>
+            <ul id="menu_foot3">
+                <li><a href="https://www.linkedin.com/in/marcostuliodeandrade/" target="_blank" rel="noopener noreferrer"><img src="din.png" width="30px" height="30px"  hspace="20" alt="link meu linkedin"></a><a href="https://www.facebook.com/marcosandradeft/" target="_blank" rel="noopener noreferrer"><img id="fb_logo" src="fb.png" hspace="5" width="30px" height="30px" alt="link meu facebook"></a></li>
+            </ul>
+        </div>
+        <div class="separator"> 
+            <div class="line1"></div>
+        </div>
+        </nav>
+    </footer>
+<script src="script.js"></script>
 </body>
-
 </html>
